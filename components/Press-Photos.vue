@@ -30,7 +30,7 @@ export default {
                     'text': 'Fiskis playing guitar'
                 },
                 {
-                    'link': 'images/8aE1K5YA.png',
+                    'link': 'images/logo.png',
                     'text': 'Fiskis playing guitar'
                 }
             ]
