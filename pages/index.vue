@@ -1,5 +1,6 @@
 <template>
-  <div class="bg-slate-950">
+  <div class="bg-slate-950 min-h-screen">
+    <Navbar />
     <Header />
     <Bio />
     <Press-Photos />
