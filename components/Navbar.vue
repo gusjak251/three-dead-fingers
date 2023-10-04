@@ -1,7 +1,7 @@
 <!-- Please remove this file from your project -->
 <template>
     <div class="flex flex-row justify-between w-full p-4 mx-auto">
-        <ul class="flex flex-row justify-evenly gap-x-8">
+        <ul class="flex flex-row justify-evenly gap-x-8 z-20">
             <li v-for="link in pageLinks" :key="link.to" class="w-24 text-center">
                 <NuxtLink class="text-white text-xl hover:opacity-75" :to="link.to">{{ link.name }}</NuxtLink>
             </li>
