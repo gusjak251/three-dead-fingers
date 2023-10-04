@@ -3,7 +3,9 @@
         <div v-for="song in songs" :key="song.title" class="text-white text-center">
             <Title>{{ song.title }}</Title>
             <p>{{ song.description }}</p>
-            <audio></audio>
+            <audio controls class="h-8 w-42 min-w-36 mt-2 mx-auto">
+                <source :src="song.link" type="audio/wav">
+            </audio>
         </div>
     </div>
 </template>
@@ -15,7 +17,7 @@ export default {
         return {
             songs: [
                 {
-                    'link': 'images/fiskis.jpg',
+                    'link': 'audio/zwamepn-tupac-mashup-demo.wav',
                     'title': 'Coward in blue',
                     'description': 'Lallish song',
                 },
