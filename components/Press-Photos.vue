@@ -19,7 +19,8 @@
             </button>
         </div>
         <div v-if="showModal"
-            class="fixed flex justify-center items-center w-screen h-screen bg-black bg-opacity-50 left-0 top-0">
+            class="fixed flex justify-center items-center w-screen h-screen bg-black bg-opacity-50 left-0 top-0 z-50">
+            <p class="text-center fixed top-10 mx-auto text-white text-lg">{{ selectedImage.text }}</p>
             <img v-click-outside="closeModal" :src="selectedImage.link" class="sm:w-3/4 md:w-1/2 text-center mx-auto" />
         </div>
     </div>
