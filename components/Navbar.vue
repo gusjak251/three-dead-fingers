@@ -6,6 +6,8 @@
                 <NuxtLink class="text-white text-xl hover:opacity-75" :to="link.to">{{ link.name }}</NuxtLink>
             </li>
         </ul>
+        <img src="images/logo.png" class="max-h-64 absolute top-5" />
+        <img src="images/eye.png" class="eye h-14 invert opacity-0 top-2 md:opacity-25" />
         <ul class="flex flex-row justify-evenly">
             <li v-for="link in externalLinks" :key="link.to">
                 <a class="text-white text-xl hover:opacity-75" :href="link.to">
@@ -53,6 +55,17 @@
         </ul>
     </div>
 </template>
+
+<style>
+.eye {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+</style>
   
 <script>
 export default {
