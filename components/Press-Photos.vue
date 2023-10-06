@@ -19,6 +19,15 @@
                 </svg>
             </button>
         </div>
+        <div class="flex flex-row justify-center gap-x-2 p-2">
+            <div v-for="(image, index) in images" :key="index" @click="
+                selectImage(image)
+            position = index;
+            " class="cursor-pointer">
+                <div class="h-2 w-2 rounded-full bg-gray-200" v-if="index == position" />
+                <div v-else class="h-2 w-2 rounded-full bg-gray-500" />
+            </div>
+        </div>
         <div v-if="showModal"
             class="fixed flex justify-center items-center w-screen h-screen bg-black bg-opacity-50 left-0 top-0 z-50">
             <p class="text-center fixed top-10 mx-auto text-white text-lg">{{ selectedImage.text }}</p>
@@ -77,20 +86,28 @@ export default {
         return {
             images: [
                 {
+                    'link': 'images/sweden-rock.jpg',
+                    'text': 'Sweden rock festival 2018'
+                },
+                {
                     'link': 'images/fiskis.jpg',
                     'text': 'Fiskis playing guitar'
                 },
                 {
-                    'link': 'images/logo.png',
-                    'text': 'Band Logo'
+                    'link': 'images/henry.JPG',
+                    'text': 'Henry behind the drums'
+                },
+                {
+                    'link': 'images/band-photo.JPG',
+                    'text': 'Band photo'
+                },
+                {
+                    'link': 'images/oliwer.JPG',
+                    'text': 'Oliwer on stage'
                 },
                 {
                     'link': 'images/header-image.JPG',
-                    'text': 'The boys'
-                },
-                {
-                    'link': 'images/IMG_0635.JPG',
-                    'text': 'Boliwer'
+                    'text': 'Band photo'
                 },
             ],
             selectedImage: {

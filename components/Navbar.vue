@@ -141,6 +141,10 @@
     right: 0;
     text-align: center;
 }
+
+.eye:hover {
+    filter: drop-shadow(0 0px 20px rgba(255, 255, 255, 0.35));
+}
 </style>
   
 <script>
