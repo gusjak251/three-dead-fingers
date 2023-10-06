@@ -1,21 +1,27 @@
 <!-- Please remove this file from your project -->
 <template>
     <div id="main" class="flex flex-row justify-around w-full mx-auto">
-        <img src="/images/fiskis.JPG" class="p-10 w-1/2 max-h-80 object-cover"/>
-        <div class="p-10 mt-8">
+        <img src="/images/fiskis.JPG" class="p-10 w-1/2 h-96 max-h-80 object-cover" />
+        <div class="p-10 mt-8 w-1/2">
             <Title class="mb-2">Bio</Title>
             <p class="text-white">
-                Vi är three dead fingers
-                Vi gör musik brorsan och vi gör
-                musik för själen
+                Three Dead Fingers, the sound of a new generation. A band from Sweden that started out in 2015 as 10-11 year
+                olds trying to play heavy music has now turned into one of the most promising acts on the map today.
+
+                With two albums already released with great reviews from sites like Metalinjection, they have already toured
+                in both Sweden & Europe at Festivals like Sweden Rock Festival, Skogsröjet and Putte I Parken. Thus becoming
+                a band known for their chaotic live performances, unique original sound and also becoming Head from Korn´s
+                favorite band of 2022.
+
+
             </p>
         </div>
     </div>
-  </template>
+</template>
   
-  <script>
-  export default {
+<script>
+export default {
     name: 'Header'
-  }
-  </script>
+}
+</script>
   
