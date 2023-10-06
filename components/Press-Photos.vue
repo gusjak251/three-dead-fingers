@@ -1,7 +1,7 @@
 <!-- Please remove this file from your project -->
 <template>
     <div>
-        <div class="flex flex-row mx-auto w-1/2">
+        <div class="flex flex-row mx-auto md:w-1/2 sm:w-3/4">
             <button @click="scroll(-1)">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="gray"
                     class="w-6 h-6">
@@ -22,8 +22,7 @@
         <div v-if="showModal"
             class="fixed flex justify-center items-center w-screen h-screen bg-black bg-opacity-50 left-0 top-0 z-50">
             <p class="text-center fixed top-10 mx-auto text-white text-lg">{{ selectedImage.text }}</p>
-            <img v-click-outside="closeModal" :src="selectedImage.link"
-                class="sm:w-3/4 md:w-1/2 h-3/4 text-center mx-auto" />
+            <img v-click-outside="closeModal" :src="selectedImage.link" class="sm:h-1/2 md:h-3/4 text-center mx-auto" />
         </div>
     </div>
 </template>
@@ -83,15 +82,15 @@ export default {
                 },
                 {
                     'link': 'images/logo.png',
-                    'text': 'Fiskis playing guitar'
+                    'text': 'Band Logo'
                 },
                 {
                     'link': 'images/header-image.JPG',
-                    'text': 'Fiskis playing guitar'
+                    'text': 'The boys'
                 },
                 {
                     'link': 'images/IMG_0635.JPG',
-                    'text': 'Fiskis playing guitar'
+                    'text': 'Boliwer'
                 },
             ],
             selectedImage: {
