@@ -9,7 +9,8 @@
                     <NuxtLink class="text-white text-xl hover:opacity-75" :to="link.to">{{ link.name }}</NuxtLink>
                 </li>
             </ul>
-            <img src="images/eye.png" class="eye h-14 invert opacity-0 top-2 md:opacity-25" />
+            <img src="images/eye.png"
+                class="eye h-14 invert opacity-0 top-1 md:opacity-50 blur-sm hover:blur-none transition-all ease" />
             <ul class="flex flex-row justify-evenly">
                 <li v-for="link in externalLinks" :key="link.to">
                     <a class="text-white text-xl hover:opacity-75" :href="link.to">
