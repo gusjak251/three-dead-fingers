@@ -21,8 +21,7 @@
         </div>
         <div class="flex flex-row justify-center gap-x-2 p-2">
             <div v-for="(image, index) in images" :key="index" @click="
-                selectImage(image)
-            position = index;
+                position = index;
             " class="cursor-pointer">
                 <div class="h-2 w-2 rounded-full bg-gray-200" v-if="index == position" />
                 <div v-else class="h-2 w-2 rounded-full bg-gray-500" />
