@@ -1,7 +1,7 @@
 <!-- Please remove this file from your project -->
 <template>
     <div id="main" class="flex flex-col md:flex-row justify-around w-full mx-auto">
-        <img src="/images/fiskis.JPG" class="p-10 w-full md:w-1/2 h-96 object-cover object-top" />
+        <img src="/images/band-photo.JPG" class="p-10 w-full md:w-1/2 band-photo object-cover object-center" />
         <div class="p-10 mt-0 md:mt-8 w-full md:w-1/2 text-left mx-auto md:mx-0">
             <Title class="mb-2">Biography</Title>
             <p class="text-white">
@@ -18,6 +18,12 @@
         </div>
     </div>
 </template>
+
+<style>
+.band-photo {
+    height: 450px;
+}
+</style>
   
 <script>
 export default {
