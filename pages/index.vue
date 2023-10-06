@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gradient-to-t from-black from-10% to-red-500 to-40% to-emerald-950 to-70% to-black min-h-screen">
+  <div class="bg-gradient-to-b from-emerald-950 from-20%  to-black to-100% min-h-screen">
     <Navbar />
     <Header />
     <Bio />

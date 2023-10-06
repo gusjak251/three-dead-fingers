@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-slate-950 min-h-screen">
+    <div class="bg-gradient-to-b from-emerald-950 from-20%  to-black to-100% max-h-screen md:min-h-screen">
         <Navbar />
         <Header />
         <PageTitle>Music</PageTitle>
