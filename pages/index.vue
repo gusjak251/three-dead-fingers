@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-slate-950 min-h-screen">
+  <div class="bg-gradient-to-t from-black from-10% to-red-500 to-40% to-emerald-950 to-70% to-black min-h-screen">
     <Navbar />
     <Header />
     <Bio />
