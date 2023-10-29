@@ -30,7 +30,7 @@
         <div v-if="showModal"
             class="fixed flex justify-center items-center w-screen h-screen bg-black bg-opacity-50 left-0 top-0 z-50">
             <p class="text-center fixed top-10 mx-auto text-white text-lg">{{ selectedImage.text }}</p>
-            <img v-click-outside="closeModal" :src="selectedImage.link" class="sm:h-1/2 md:h-3/4 text-center mx-auto" />
+            <img v-click-outside="closeModal" :src="selectedImage.link" class="h-1/2 md:h-3/4 text-center mx-auto" />
         </div>
     </div>
 </template>
