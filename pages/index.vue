@@ -5,7 +5,7 @@
     <Bio />
     <Press-Photos />
     <Title class="text-center mt-4 mb-2">Members</Title>
-    <div class="flex flex-row justify-center gap-2">
+    <div class="flex flex-col mx-auto md:flex-row justify-center gap-2">
       <MemberCard v-for="member in members" :key="member.name" :name="member.name" :role="member.role"
         :img="member.image" />
     </div>
@@ -31,7 +31,7 @@ export default {
         {
           'name': 'Gustav',
           'role': 'Bass player',
-          'image': 'images/band-photo.jpg'
+          'image': 'images/gustav-portrait.jpg'
         },
         {
           'name': 'Henry',

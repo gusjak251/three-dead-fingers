@@ -12,4 +12,10 @@ export default {
     name: 'MusicPage'
 }
 </script>
+
+<style>
+h1 {
+    font-weight: 100;
+}
+</style>
     
