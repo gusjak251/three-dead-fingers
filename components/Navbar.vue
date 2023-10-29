@@ -115,14 +115,14 @@
                 'w-0': !hamburgerOpen,
                 'w-48': hamburgerOpen
             }" v-click-outside="closeMenu">
-                <button @click="hamburgerOpen = false" class="px-2.5 py-2 mb-2">
+                <button @click="hamburgerOpen = false" class="px-2.5 py-2 mb-2 absolute right-2">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="gray"
                         class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
                 <img src="images/logo.png" class="h-24 fixed bottom-0.5 left-0.5 px-3.5 py-2" />
-                <ul class="flex flex-col justify-evenly gap-y-4 z-20">
+                <ul class="flex flex-col justify-evenly gap-y-4 z-20 mt-12">
                     <li v-for="link in pageLinks" :key="link.to" class="text-left px-3.5 py-2">
                         <NuxtLink class="text-white text-xl hover:opacity-75" :to="link.to">{{ link.name }}</NuxtLink>
                     </li>
