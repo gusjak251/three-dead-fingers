@@ -3,14 +3,15 @@
     <div>
         <img src="images/logo.png"
             class="max-h-48 md:max-h-64 absolute text-center mx-auto left-0 right-0 top-36 md:mx-0 md:text-left md:top-5" />
-        <div class="flex-row justify-between w-full p-4 mx-auto bg-slate-950 hidden md:flex">
-            <ul class="flex flex-row justify-evenly gap-x-8 z-20">
+        <div class="flex-row justify-around w-full p-4 mx-auto bg-slate-950 hidden md:flex">
+            <ul class="flex flex-row justify-evenly gap-x-6 z-20">
+                <img src="images/tdf-ape.png" class="h-8" />
                 <li v-for="link in pageLinks" :key="link.to" class="w-24 text-center">
                     <NuxtLink class="text-white text-xl hover:opacity-75" :to="link.to">{{ link.name }}</NuxtLink>
                 </li>
             </ul>
-            <img src="images/eye.png"
-                class="eye h-14 invert opacity-0 top-1 md:opacity-50 blur-sm hover:blur-none transition-all ease" />
+            <!-- <img src="images/eye.png"
+                class="eye h-14 invert opacity-0 top-1 md:opacity-50 blur-sm hover:blur-none transition-all ease" /> -->
             <ul class="flex flex-row justify-evenly">
                 <li v-for="link in externalLinks" :key="link.to">
                     <a class="text-white text-xl hover:opacity-75" :href="link.to">
