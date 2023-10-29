@@ -14,7 +14,7 @@
                 class="eye h-14 invert opacity-0 top-1 md:opacity-50 blur-sm hover:blur-none transition-all ease" /> -->
             <ul class="flex flex-row justify-evenly">
                 <li v-for="link in externalLinks" :key="link.to">
-                    <a class="text-white text-xl hover:opacity-75" :href="link.to">
+                    <a class="text-white text-xl hover:opacity-75" :href="link.to" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
                             viewBox="0,0,256,256" class="h-8" v-if="link.name === 'Facebook'">
                             <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
