@@ -89,6 +89,14 @@ export default {
                     'text': 'Sweden rock festival 2018'
                 },
                 {
+                    'link': 'images/forest-photo.jpg',
+                    'text': 'Three dead fingers'
+                },
+                {
+                    'link': 'images/water-photo.jpg',
+                    'text': 'Three dead finges'
+                },
+                {
                     'link': 'images/fiskis.jpg',
                     'text': 'Fiskis playing guitar'
                 },
