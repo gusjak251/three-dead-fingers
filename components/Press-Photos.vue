@@ -93,7 +93,7 @@ export default {
                     'text': 'Three dead fingers'
                 },
                 {
-                    'link': 'images/water-photo.jpg',
+                    'link': 'images/water-photo.png',
                     'text': 'Three dead finges'
                 },
                 {

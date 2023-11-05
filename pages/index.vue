@@ -4,6 +4,7 @@
     <Header />
     <Bio />
     <Press-Photos />
+    <Reviews :light="true" />
     <Title class="text-center mt-4 mb-2">Members</Title>
     <div class="flex flex-col mx-auto md:flex-row justify-center gap-2">
       <MemberCard v-for="member in members" :key="member.name" :name="member.name" :role="member.role"

@@ -171,6 +171,10 @@ export default {
                     'to': '/images'
                 },
                 {
+                    'name': 'Reviews',
+                    'to': '/reviews'
+                },
+                {
                     'name': 'Contact',
                     'to': '/contact'
                 }
