@@ -1,17 +1,43 @@
 <template>
-    <div class="bg-gradient-to-b from-emerald-950 from-20%  to-black to-100% min-h-screen pb-12">
+    <div class="bg-gradient-to-b from-emerald-950 from-5%  to-black to-100% min-h-screen pb-12">
+        <Transition>
+            <div class="fixed flex justify-center items-center w-full h-full z-50 bg-black pointer-events-none"
+                v-if="isLoading" v-cloak>
+                <img class="h-1/2 animate-pulse" src="images/tdf-ape.png" />
+            </div>
+        </Transition>
         <Navbar />
         <Header />
         <PageTitle>Music</PageTitle>
         <SectionTitle class="text-center">Upcoming releases</SectionTitle>
         <Songs />
         <SectionTitle class="text-center">Previous releases</SectionTitle>
+        <div class="space-y-5">
+            <iframe style="border-radius:12px" class="mx-auto w-3/4 md:w-1/2"
+                src="https://open.spotify.com/embed/album/2VNrduNdOJKoELeQF3LHgX?utm_source=generator&theme=0" height="352"
+                frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+            </iframe>
+            <iframe style="border-radius:12px" class="mx-auto w-3/4 md:w-1/2"
+                src="https://open.spotify.com/embed/album/3RYm1taDUhk9eNtYCczGEX?utm_source=generator&theme=0" height="352"
+                frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+            </iframe>
+        </div>
     </div>
 </template>
     
 <script>
 export default {
-    name: 'MusicPage'
+    name: 'MusicPage',
+    data() {
+        return {
+            isLoading: true
+        }
+    },
+    mounted() {
+        this.isLoading = false;
+    }
 }
 </script>
 

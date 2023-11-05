@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-row justify-evenly w-3/4 mx-auto">
+    <div class="flex flex-col gap-4 md:gap-0 md:flex-row justify-evenly w-3/4 mx-auto">
         <div v-for="review in reviews" :key="review.url">
             <Review :author="review.author" :record="review.record" :rating="review.rating" :quote="review.quote"
                 :url="review.url" />

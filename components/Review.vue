@@ -1,6 +1,6 @@
 <template>
     <div class="text-white">
-        <h3 class="text-xl font-bold mb-2">{{ author }}</h3>
+        <h3 class="text-xl font-bold mb-2 text-center md:text-left">{{ author }}</h3>
         <p class="font-bold">{{ record }}</p>
         <p>{{ rating }}</p>
         <p class="italic">{{ quote }}</p>

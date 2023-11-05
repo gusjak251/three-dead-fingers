@@ -1,10 +1,11 @@
 <template>
-  <div class="bg-gradient-to-b from-emerald-950 from-20%  to-black to-100% min-h-screen pb-12">
-    <!-- <Transition>
-      <div class="fixed flex justify-center items-center w-full h-full z-50 bg-black" v-if="isLoading" v-cloak>
+  <div class="bg-gradient-to-b from-emerald-950 from-5%  to-black to-100% min-h-screen pb-12">
+    <Transition>
+      <div class="fixed flex justify-center items-center w-full h-full z-50 bg-black pointer-events-none" v-if="isLoading"
+        v-cloak>
         <img class="h-1/2 animate-pulse" src="images/tdf-ape.png" />
       </div>
-    </Transition> -->
+    </Transition>
     <Navbar />
     <Header />
     <Bio class="mb-4" />
@@ -52,7 +53,7 @@ export default {
   mounted() {
     setTimeout(() => {
       this.isLoading = false;
-    }, 0);
+    }, 50);
   }
 }
 </script>
@@ -66,7 +67,7 @@ export default {
 
 .v-enter-active,
 .v-leave-active {
-  transition: opacity 1s ease;
+  transition: opacity .5s ease;
 }
 
 .v-enter-from,
