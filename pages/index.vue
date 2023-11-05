@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gradient-to-b from-emerald-950 from-5%  to-black to-100% min-h-screen pb-12">
+  <div class="bg-gradient-to-b from-emerald-950 from-5%  to-black to-70% min-h-screen pb-12">
     <Transition>
       <div class="fixed flex justify-center items-center w-full h-full z-50 bg-black pointer-events-none" v-if="isLoading"
         v-cloak>
