@@ -167,8 +167,8 @@ export default {
                     'to': '/music'
                 },
                 {
-                    'name': 'Images',
-                    'to': '/images'
+                    'name': 'Photos',
+                    'to': '/photos'
                 },
                 {
                     'name': 'Reviews',
