@@ -1,9 +1,10 @@
 <template>
     <div class="text-white">
-        <h3 class="text-xl font-bold">{{ author }}</h3>
+        <h3 class="text-xl font-bold mb-2">{{ author }}</h3>
+        <p class="font-bold">{{ record }}</p>
         <p>{{ rating }}</p>
         <p class="italic">{{ quote }}</p>
-        <a :href="url" target="_blank" class="hover:opacity-70">Read the review</a>
+        <a :href="url" target="_blank" class="hover:opacity-70 text-gray-500">Read the review</a>
     </div>
 </template>
   
@@ -12,6 +13,7 @@ export default {
     name: 'Review',
     props: {
         author: String,
+        record: String,
         rating: String,
         quote: String,
         url: String

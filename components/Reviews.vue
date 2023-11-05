@@ -1,7 +1,8 @@
 <template>
     <div class="flex flex-row justify-evenly w-3/4 mx-auto">
         <div v-for="review in reviews" :key="review.url">
-            <Review :author="review.author" :rating="review.rating" :quote="review.quote" :url="review.url" />
+            <Review :author="review.author" :record="review.record" :rating="review.rating" :quote="review.quote"
+                :url="review.url" />
         </div>
     </div>
 </template>
@@ -19,13 +20,15 @@ export default {
         return {
             reviews: [
                 {
-                    author: 'Sweden rock mag',
-                    rating: '7.5/10',
-                    quote: 'Micke bra!',
-                    url: 'https://www.youtube.com'
+                    author: 'Metal Centre',
+                    record: 'All Worlds Apart',
+                    rating: '8.5/10',
+                    quote: '"THREE DEAD FINGERS has great potential."',
+                    url: 'https://www.metalcentre.com/2022/01/three-dead-fingers-all-worlds-apart/'
                 },
                 {
                     author: 'Deutsche metal',
+                    record: 'All Worlds Apart',
                     rating: '9/10',
                     quote: '"Its the fookin best!"',
                     url: 'https://www.google.com'

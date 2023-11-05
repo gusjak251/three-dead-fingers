@@ -3,7 +3,9 @@
         <Navbar />
         <Header />
         <PageTitle>Music</PageTitle>
+        <SectionTitle class="text-center">Upcoming releases</SectionTitle>
         <Songs />
+        <SectionTitle class="text-center">Previous releases</SectionTitle>
     </div>
 </template>
     

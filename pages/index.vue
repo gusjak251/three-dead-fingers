@@ -1,15 +1,21 @@
 <template>
   <div class="bg-gradient-to-b from-emerald-950 from-20%  to-black to-100% min-h-screen pb-12">
+    <!-- <Transition>
+      <div class="fixed flex justify-center items-center w-full h-full z-50 bg-black" v-if="isLoading" v-cloak>
+        <img class="h-1/2 animate-pulse" src="images/tdf-ape.png" />
+      </div>
+    </Transition> -->
     <Navbar />
     <Header />
-    <Bio />
-    <Press-Photos />
-    <Reviews :light="true" />
-    <Title class="text-center mt-4 mb-2">Members</Title>
-    <div class="flex flex-col mx-auto md:flex-row justify-center gap-2">
+    <Bio class="mb-4" />
+    <SectionTitle class="text-center">Reviews</SectionTitle>
+    <Reviews :light="true" class="mb-20" />
+    <SectionTitle class="text-center mt-4 mb-2">Members</SectionTitle>
+    <div class="flex flex-col mx-auto md:flex-row justify-center gap-12 mb-20">
       <MemberCard v-for="member in members" :key="member.name" :name="member.name" :role="member.role"
         :img="member.image" />
     </div>
+    <Press-Photos />
   </div>
 </template>
 
@@ -40,7 +46,13 @@ export default {
           'image': 'images/henry.jpg'
         }
       ],
+      isLoading: true
     }
+  },
+  mounted() {
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 0);
   }
 }
 </script>
@@ -50,5 +62,15 @@ export default {
 
 * {
   font-family: 'Gabarito', cursive;
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 1s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
 }
 </style>

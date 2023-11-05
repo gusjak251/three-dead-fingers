@@ -1,8 +1,8 @@
 <!-- Please remove this file from your project -->
 <template>
-    <div class="text-center w-3/4 mx-auto md:w-48">
+    <div class="text-center md:w-48">
         <Title>{{ name }}</Title>
-        <p class="text-gray-700 text-sm mb-2">{{ role }}</p>
+        <p class="text-gray-500 text-sm mb-2">{{ role }}</p>
         <img class="h-48 object-cover mx-auto mb-4 md:mb-0" :src="img" />
     </div>
 </template>
