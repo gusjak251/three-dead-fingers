@@ -10,7 +10,8 @@
         <Header />
         <PageTitle>Music</PageTitle>
         <SectionTitle class="text-center">Upcoming releases</SectionTitle>
-        <Songs />
+        <p class="text-white text-center">For the Next Species</p>
+        <p class="text-gray-500 text-center">Release date: unknown</p>
         <SectionTitle class="text-center">Previous releases</SectionTitle>
         <div class="space-y-5">
             <iframe style="border-radius:12px" class="mx-auto w-3/4 md:w-1/2"

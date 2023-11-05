@@ -16,6 +16,7 @@
       <MemberCard v-for="member in members" :key="member.name" :name="member.name" :role="member.role"
         :img="member.image" />
     </div>
+    <SectionTitle class="text-center mt-4 mb-2">Photos</SectionTitle>
     <Press-Photos />
   </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
-    <div class="flex flex-col gap-4 md:gap-0 md:flex-row justify-evenly w-3/4 mx-auto">
-        <div v-for="review in reviews" :key="review.url">
+    <div class="flex flex-col flex-wrap gap-4 md:gap-0 md:flex-row justify-evenly items-center w-3/4 mx-auto">
+        <div v-for="review in showReviews" :key="review.url">
             <Review :author="review.author" :record="review.record" :rating="review.rating" :quote="review.quote"
                 :url="review.url" />
         </div>
@@ -27,13 +27,28 @@ export default {
                     url: 'https://www.metalcentre.com/2022/01/three-dead-fingers-all-worlds-apart/'
                 },
                 {
-                    author: 'Deutsche metal',
+                    author: 'Dead rhetoric',
                     record: 'All Worlds Apart',
-                    rating: '9/10',
-                    quote: '"Its the fookin best!"',
-                    url: 'https://www.google.com'
-                }
+                    rating: '7.5/10',
+                    quote: '"the future could look quite bright for them going into their third full-length"',
+                    url: 'https://deadrhetoric.com/reviews/three-dead-fingers-all-worlds-apart-art-gates-records/'
+                },
+                {
+                    author: 'Eternal terror',
+                    record: 'All Worlds Apart',
+                    rating: '4/6',
+                    quote: '"this is a good release that shows great promise"',
+                    url: 'https://eternal-terror.com/2022/01/13/three-dead-fingers-all-worlds-apart/'
+                },
             ]
+        }
+    },
+    computed: {
+        showReviews() {
+            if (this.light) {
+                return this.reviews.splice(0, 3);
+            }
+            return this.reviews;
         }
     }
 }

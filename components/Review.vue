@@ -1,5 +1,5 @@
 <template>
-    <div class="text-white">
+    <div class="text-white w-72">
         <h3 class="text-xl font-bold mb-2 text-center md:text-left">{{ author }}</h3>
         <p class="font-bold">{{ record }}</p>
         <p>{{ rating }}</p>
