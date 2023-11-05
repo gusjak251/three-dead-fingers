@@ -3,7 +3,7 @@
     <div>
         <img src="images/logo.png"
             class="max-h-48 md:max-h-64 absolute text-center mx-auto left-0 right-0 top-36 md:mx-0 md:text-left md:top-5" />
-        <div class="flex-row justify-around w-full p-4 mx-auto bg-slate-950 hidden md:flex">
+        <div class="flex-row justify-around w-full p-4 mx-auto bg-black hidden md:flex">
             <ul class="flex flex-row justify-evenly gap-x-6 z-20">
                 <img src="images/tdf-ape.png" class="h-8" />
                 <li v-for="link in pageLinks" :key="link.to" class="w-24 text-center">
@@ -58,7 +58,7 @@
                 </li>
             </ul>
         </div>
-        <div class="w-full p-6 mx-auto bg-slate-950 flex flex-row justify-between md:hidden">
+        <div class="w-full p-6 mx-auto bg-black flex flex-row justify-between md:hidden">
             <button class="block top-1 w-5 h-6" @click="hamburgerOpen = true">
                 <span class="h-0.5 w-6 bg-gray-200 block mb-1"></span>
                 <span class="h-0.5 w-6 bg-gray-200 block mb-1"></span>
@@ -112,7 +112,7 @@
         </div>
         <div class="fixed md:hidden top-0 left-0 h-full w-full bg-black bg-opacity-50" v-if="hamburgerOpen">
             <div :class="{
-                'fixed md:hidden top-0 left-0 h-full bg-slate-950 transition-width transition-slowest ease': true,
+                'fixed md:hidden top-0 left-0 h-full bg-black transition-width transition-slowest ease': true,
                 'w-0': !hamburgerOpen,
                 'w-48': hamburgerOpen
             }" v-click-outside="closeMenu">
