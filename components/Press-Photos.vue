@@ -101,19 +101,19 @@ export default {
                     'text': 'Fiskis playing guitar'
                 },
                 {
-                    'link': 'images/henry.JPG',
+                    'link': 'images/henry.jpg',
                     'text': 'Henry behind the drums'
                 },
                 {
-                    'link': 'images/band-photo.JPG',
+                    'link': 'images/band-photo.jpg',
                     'text': 'Band photo'
                 },
                 {
-                    'link': 'images/oliwer.JPG',
+                    'link': 'images/oliwer.jpg',
                     'text': 'Oliwer on stage'
                 },
                 {
-                    'link': 'images/header-image.JPG',
+                    'link': 'images/header-image.jpg',
                     'text': 'Band photo'
                 },
             ],
