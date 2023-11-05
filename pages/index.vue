@@ -30,7 +30,7 @@ export default {
         {
           'name': 'Oliwer',
           'role': 'Singer/Guitarist/Songwriter',
-          'image': 'images/oliwer.jpg'
+          'image': 'images/oliwer.JPG'
         },
         {
           'name': 'Fiskis',

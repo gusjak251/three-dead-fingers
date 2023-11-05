@@ -109,11 +109,11 @@ export default {
                     'text': 'Band photo'
                 },
                 {
-                    'link': 'images/oliwer.jpg',
+                    'link': 'images/oliwer.JPG',
                     'text': 'Oliwer on stage'
                 },
                 {
-                    'link': 'images/header-image.jpg',
+                    'link': 'images/header-image.JPG',
                     'text': 'Band photo'
                 },
             ],
