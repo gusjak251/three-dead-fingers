@@ -60,10 +60,9 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
-
-* {
-  font-family: 'Gabarito', cursive;
+@font-face {
+  font-family: Gabarito, cursive;
+  src: url("/fonts/Gabarito-VariableFont_wght.ttf")
 }
 
 .v-enter-active,
