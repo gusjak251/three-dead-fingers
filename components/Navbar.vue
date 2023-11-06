@@ -58,15 +58,15 @@
                 </li>
             </ul>
         </div>
-        <div class="w-full p-6 mx-auto bg-black flex flex-row justify-between md:hidden">
+        <div class="w-full p-6 mx-auto bg-black flex flex-row justify-between items-center md:hidden">
             <button class="block top-1 w-5 h-6" @click="hamburgerOpen = true">
                 <span class="h-0.5 w-6 bg-gray-200 block mb-1"></span>
                 <span class="h-0.5 w-6 bg-gray-200 block mb-1"></span>
                 <span class="h-0.5 w-6 bg-gray-200 block "></span>
             </button>
-            <ul class="flex flex-row flex-wrap justify-start">
+            <ul class="flex flex-row">
                 <li v-for="link in externalLinks" :key="link.to">
-                    <a class="text-white text-lg hover:opacity-75" :href="link.to">
+                    <a class="text-white text-md hover:opacity-75" :href="link.to">
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
                             viewBox="0,0,256,256" class="h-8" v-if="link.name === 'Facebook'">
                             <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
