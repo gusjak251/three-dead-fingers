@@ -11,6 +11,10 @@
     <Bio class="mb-4" />
     <SectionTitle class="text-center">Reviews</SectionTitle>
     <Reviews :light="true" class="mb-20" />
+    <div class="mx-auto text-center">
+      <SectionTitle>Head's favorite band</SectionTitle>
+      <Video />
+    </div>
     <SectionTitle class="text-center mt-4 mb-2">Members</SectionTitle>
     <div class="flex flex-col mx-auto md:flex-row justify-center gap-12 mb-20">
       <MemberCard v-for="member in members" :key="member.name" :name="member.name" :role="member.role"
