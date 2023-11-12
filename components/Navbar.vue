@@ -2,7 +2,7 @@
 <template>
     <div>
         <img src="images/logo.png"
-            class="max-h-48 md:max-h-64 absolute text-center mx-auto left-0 right-0 top-36 md:mx-0 md:text-left md:top-5" />
+            class="max-h-48 md:max-h-72 absolute text-center mx-auto left-0 right-0 top-36 md:top-48" />
         <div class="flex-row justify-around w-full p-4 mx-auto bg-black hidden md:flex">
             <ul class="flex flex-row justify-evenly gap-x-6 z-20">
                 <img src="images/tdf-ape.png" class="h-8" />
