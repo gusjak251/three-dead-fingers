@@ -95,7 +95,7 @@ export default {
                 },
                 {
                     'link': 'images/water-photo.png',
-                    'text': 'Three dead finges'
+                    'text': 'Three dead fingers'
                 },
                 {
                     'link': 'images/fiskis.jpg',
