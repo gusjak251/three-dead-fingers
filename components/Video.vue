@@ -1,7 +1,7 @@
 <!-- Please remove this file from your project -->
 <template>
-    <video class="mx-auto" controls>
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" />
+    <video class="mx-auto w-72" controls>
+        <source src="images/head-video.mp4" />
     </video>
 </template>
     

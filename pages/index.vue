@@ -13,6 +13,7 @@
     <Reviews :light="true" class="mb-20" />
     <div class="mx-auto text-center">
       <SectionTitle>Head's favorite band</SectionTitle>
+      <p class="text-gray-500 mb-2">Head from Korn reveals his favorite band</p>
       <Video />
     </div>
     <SectionTitle class="text-center mt-4 mb-2">Members</SectionTitle>
