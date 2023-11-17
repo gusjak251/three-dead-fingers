@@ -6,12 +6,14 @@
             <Title class="mb-2">Three Dead Fingers - the sound of a new generation</Title>
             <p class="text-white">
                 A band from Sweden that started out in 2015 as 10-11 year
-                olds trying to play heavy music has now turned into one of the most promising acts on the map today.
+                olds trying to play heavy music has turned into one of the most promising acts on the map today.
                 <br><br>
-                With two albums already released with great reviews from sites like Metalinjection, they have already toured
-                in both Sweden & Europe and played at festivals like Sweden Rock Festival, Skogsröjet and Putte I Parken.
-                They have become known for their chaotic live show, unique sound and creative mix of
-                genres.
+                They have released two full-length albums and received great reviews from sites like Metalinjection. At the
+                same
+                time, they have managed to tour in both Sweden & Europe and played at big festivals such as Sweden Rock
+                Festival, Skogsröjet and Putte I Parken.
+                Their chaotic live show, unique sound and creative mix of
+                genres is what sets them apart.
                 <br><br>
                 Their latest record, <i>For the Next Species</i>, was recorded and produced by Mikael Gottberg during
                 the spring of 2023, and is yet to be released...
