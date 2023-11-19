@@ -10,8 +10,11 @@
         <Header />
         <PageTitle>Music</PageTitle>
         <SectionTitle class="text-center">Upcoming releases</SectionTitle>
-        <p class="text-white text-center">For the Next Species</p>
-        <p class="text-gray-500 text-center">Release date: unknown</p>
+        <div class="album-card px-2.5 py-1.5 w-72 rounded-md mx-auto flex flex-col">
+            <p class="text-white text-center">For the Next Species</p>
+            <span class="divider my-1 mx-auto"></span>
+            <p class="text-gray-500 text-center">Release date: unknown</p>
+        </div>
         <SectionTitle class="text-center">Previous releases</SectionTitle>
         <div class="space-y-5">
             <iframe style="border-radius:12px" class="mx-auto w-3/4 md:w-1/2"
@@ -45,6 +48,16 @@ export default {
 <style>
 h1 {
     font-weight: 100;
+}
+
+.album-card {
+    background-color: #2a2a2a;
+}
+
+.divider {
+    width: 80%;
+    height: 1px;
+    background-color: rgb(78, 78, 78);
 }
 </style>
     
