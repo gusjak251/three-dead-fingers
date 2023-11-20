@@ -16,7 +16,9 @@
                 genres is what sets them apart.
                 <br><br>
                 Their latest record, <i>For the Next Species</i>, was recorded and produced by Mikael Gottberg during
-                the spring of 2023, and is yet to be released...
+                the spring of 2023. With this new unreleased album under their wings, the
+                Space-Cowboys are ready
+                to embark on a great journey.
 
 
             </p>

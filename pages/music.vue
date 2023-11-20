@@ -10,10 +10,22 @@
         <Header />
         <PageTitle>Music</PageTitle>
         <SectionTitle class="text-center">Upcoming releases</SectionTitle>
-        <div class="album-card px-2.5 py-1.5 w-72 rounded-md mx-auto flex flex-col">
-            <p class="text-white text-center">For the Next Species</p>
-            <span class="divider my-1 mx-auto"></span>
-            <p class="text-gray-500 text-center">Release date: unknown</p>
+        <div class="album-card w-96 p-4 rounded-md mx-auto flex flex-col">
+            <div class="flex flex-row mb-3 gap-4">
+                <img src="images/for-the-next-species-cover.png" class="h-24 rounded-lg" />
+                <div class="flex-col mt-3">
+                    <p class="text-white text-md text-left font-bold">For the Next Species</p>
+                    <span class="divider my-1 mx-auto"></span>
+                    <p class="text-gray-500 text-left">Release date: unknown</p>
+                </div>
+            </div>
+            <div>
+                <p class="text-white">
+                    This unreleased album, blooming out in a mix of Psychedelia, Death Metal,
+                    unexpected
+                    rhythms & vivid melodies, marks the beginning of a new era for Three Dead Fingers.
+                </p>
+            </div>
         </div>
         <SectionTitle class="text-center">Previous releases</SectionTitle>
         <div class="space-y-5">
