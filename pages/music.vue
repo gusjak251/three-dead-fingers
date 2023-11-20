@@ -10,9 +10,9 @@
         <Header />
         <PageTitle>Music</PageTitle>
         <SectionTitle class="text-center">Upcoming releases</SectionTitle>
-        <div class="album-card w-96 p-4 rounded-md mx-auto flex flex-col">
+        <div class="album-card w-96 p-4 rounded-lg mx-auto flex flex-col">
             <div class="flex flex-row mb-3 gap-4">
-                <img src="images/for-the-next-species-cover.png" class="h-24 rounded-lg" />
+                <img src="images/for-the-next-species-cover.png" class="h-24 rounded-lg" @load="loadedImgsLength++" />
                 <div class="flex-col mt-3">
                     <p class="text-white text-md text-left font-bold">For the Next Species</p>
                     <span class="divider my-1 mx-auto"></span>
@@ -48,12 +48,19 @@ export default {
     name: 'MusicPage',
     data() {
         return {
-            isLoading: true
+            isLoading: true,
+            loadedImgsLength: 1,
+            imgsLength: 1
         }
     },
     mounted() {
         this.isLoading = false;
-    }
+    },
+    computed: {
+        ready() {
+            return (this.loadedImgsLength > 0 && this.loadedImgsLength == this.imgsLength)
+        }
+    },
 }
 </script>
 
