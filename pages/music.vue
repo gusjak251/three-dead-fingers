@@ -1,8 +1,7 @@
 <template>
     <div class="bg-gradient-to-b from-emerald-950 from-5%  to-black to-90% min-h-screen pb-12">
         <Transition>
-            <div class="fixed flex justify-center items-center w-full h-full z-50 bg-black pointer-events-none"
-                v-if="isLoading" v-cloak>
+            <div class="fixed flex justify-center items-center w-full h-full z-50 bg-black pointer-events-none" v-if="isLoading">
                 <img class="h-1/2 animate-pulse" src="images/tdf-ape.png" />
             </div>
         </Transition>
@@ -10,20 +9,18 @@
         <Header />
         <PageTitle>Music</PageTitle>
         <SectionTitle class="text-center">Upcoming releases</SectionTitle>
-        <div class="album-card w-96 p-4 rounded-lg mx-auto flex flex-col">
+        <div class="album-card w-3/4 md:w-1/2 p-4 rounded-lg mx-auto flex flex-col" v-for="release in upcomingReleases" :key="release.name">
             <div class="flex flex-row mb-3 gap-4">
-                <img src="images/for-the-next-species-cover.png" class="h-24 rounded-lg" @load="loadedImgsLength++" />
+                <img :src="release.imageUrl" class="h-24 rounded-lg"/>
                 <div class="flex-col mt-3">
-                    <p class="text-white text-md text-left font-bold">For the Next Species</p>
+                    <p class="text-white text-md text-left font-bold">{{ release.name }}</p>
                     <span class="divider my-1 mx-auto"></span>
-                    <p class="text-gray-500 text-left">Release date: unknown</p>
+                    <p class="text-gray-300 text-left">Release date: {{ release.releaseDate || "unknown"}}</p>
                 </div>
             </div>
             <div>
-                <p class="text-white">
-                    This unreleased album, blooming out in a mix of Psychedelia, Death Metal,
-                    unexpected
-                    rhythms & vivid melodies, marks the beginning of a new era for Three Dead Fingers.
+                <p class="text-white pr-4">
+                    {{ release.description }}
                 </p>
             </div>
         </div>
@@ -49,17 +46,18 @@ export default {
     data() {
         return {
             isLoading: true,
-            loadedImgsLength: 1,
-            imgsLength: 1
+            upcomingReleases: [
+                {
+                    name: "For the Next Species",
+                    releaseDate: "2024-03-16",
+                    description: "This unreleased album, blooming out in a mix of Psychedelia, Death Metal, unexpected rhythms & vivid melodies, marks the beginning of a new era for Three Dead Fingers.",
+                    imageUrl: "images/for-the-next-species-cover.png",
+                }
+            ]
         }
     },
     mounted() {
         this.isLoading = false;
-    },
-    computed: {
-        ready() {
-            return (this.loadedImgsLength > 0 && this.loadedImgsLength == this.imgsLength)
-        }
     },
 }
 </script>
