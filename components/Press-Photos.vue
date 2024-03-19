@@ -1,4 +1,3 @@
-<!-- Please remove this file from your project -->
 <template>
     <div>
         <div class="flex flex-row justify-center mx-auto md:w-3/4 sm:w-3/4">
@@ -29,7 +28,8 @@
         </div>
         <div v-if="showModal"
             class="fixed flex justify-center items-center w-screen h-screen bg-black bg-opacity-50 left-0 top-0 z-50">
-            <p class="text-center fixed top-10 mx-auto text-white text-lg">{{ selectedImage.text }}</p>
+            <p class="text-center fixed top-5 mx-auto text-white text-lg">{{ selectedImage.text }}</p>
+            <p class="text-center fixed top-10 mx-auto text-gray-400 text-lg">Photographer: {{ selectedImage.credits }}</p>
             <img v-click-outside="closeModal" :src="selectedImage.link"
                 class="h-1/2 md:h-3/4 text-center mx-auto object-cover" />
         </div>
@@ -87,35 +87,43 @@ export default {
             images: [
                 {
                     'link': 'images/sweden-rock.jpg',
-                    'text': 'Sweden rock festival 2018'
+                    'text': 'Sweden rock festival 2018',
+                    'credits': 'Rodrigo Tobar',
                 },
                 {
                     'link': 'images/forest-photo.jpg',
-                    'text': 'Three dead fingers'
+                    'text': 'Three dead fingers',
+                    'credits': 'Urban Åsell',
                 },
                 {
                     'link': 'images/water-photo.png',
-                    'text': 'Three dead fingers'
+                    'text': 'Three dead fingers',
+                    'credits': 'Urban Åsell',
                 },
                 {
                     'link': 'images/fiskis.jpg',
-                    'text': 'Fiskis playing guitar'
+                    'text': 'Fiskis playing guitar',
+                    'credits': 'Paulsens foto',
                 },
                 {
                     'link': 'images/henry.jpg',
-                    'text': 'Henry behind the drums'
+                    'text': 'Henry behind the drums',
+                    'credits': 'Axel Nordgren'
                 },
                 {
                     'link': 'images/band-photo.jpg',
-                    'text': 'Band photo'
+                    'text': 'Band photo',
+                    'credits': 'Ludvig Löfgren'
                 },
                 {
                     'link': 'images/oliwer.JPG',
-                    'text': 'Oliwer on stage'
+                    'text': 'Oliwer on stage',
+                    'credits': 'Axel Nordgren',
                 },
                 {
                     'link': 'images/header-image.JPG',
-                    'text': 'Band photo'
+                    'text': 'Band photo',
+                    'credits': 'Urban Åsell',
                 },
             ],
             selectedImage: {

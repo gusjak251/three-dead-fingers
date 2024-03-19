@@ -1,5 +1,6 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  srr: true,
   head: {
     title: 'three-dead-fingers',
     htmlAttrs: {
