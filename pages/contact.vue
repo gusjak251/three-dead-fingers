@@ -9,7 +9,7 @@
         <Navbar />
         <Header />
         <PageTitle>Contact information</PageTitle>
-        <div class="md:grid md:grid-cols-2 gap-4 flex flex-col justify-evenly mx-auto px-10">
+        <div class="gap-4 flex flex-col justify-evenly mx-auto px-10 max-w-xl">
             <ContactCard 
                 v-for="member in members" 
                 :key="member.name" 
