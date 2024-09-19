@@ -125,7 +125,7 @@
                 <img src="images/logo.png" class="h-24 fixed bottom-0.5 left-0.5 px-3.5 py-2" />
                 <ul class="flex flex-col justify-evenly gap-y-4 z-20 mt-12">
                     <li v-for="link in pageLinks" :key="link.to" class="text-left px-3.5 py-2">
-                        <NuxtLink class="text-white text-xl hover:opacity-75" :to="link.to">{{ link.name }}</NuxtLink>
+                        <NuxtLink class="text-white text-xl hover:opacity-75" :to="link.to" @click.native="hamburgerOpen = false">{{ link.name }}</NuxtLink>
                     </li>
                 </ul>
             </div>
@@ -165,6 +165,10 @@ export default {
                 {
                     'name': 'Music',
                     'to': '/music'
+                },
+                {
+                    'name': 'Concerts',
+                    'to': '/concerts'
                 },
                 {
                     'name': 'Photos',
