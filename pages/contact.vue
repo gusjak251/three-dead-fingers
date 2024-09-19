@@ -9,26 +9,15 @@
         <Navbar />
         <Header />
         <PageTitle>Contact information</PageTitle>
-        <div class="flex flex-col md:flex-row gap-y-4 md:gap-y-0 justify-evenly w-3/4 mx-auto">
-            <div class="flex flex-col w-full md:w-40 text-center md:text-left">
-                <Title>Name</Title>
-                <p v-for="member in members" :key="member.email" class="text-white">
-                    {{ member.name }}
-                </p>
-            </div>
-            <div class="flex flex-col w-full md:w-40 text-center md:text-left">
-                <Title>Role</Title>
-                <p v-for="member in members" :key="member.email" class="text-white">
-                    {{ member.role }}
-                </p>
-            </div>
-            <div class="flex flex-col w-full md:w-40 text-center md:text-left">
-                <Title>Email</Title>
-                <p v-for="member in members" :key="member.email" @click="copyEmail(member.email)"
-                    class="text-white cursor-pointer hover:opacity-75">
-                    {{ member.email }}
-                </p>
-            </div>
+        <div class="md:grid md:grid-cols-2 gap-4 flex flex-col justify-evenly mx-auto px-10">
+            <ContactCard 
+                v-for="member in members" 
+                :key="member.name" 
+                :name="member.name" 
+                :role="member.role" 
+                :email="member.email"
+                @copy="showSnack = true"
+            />
         </div>
         <Snack @hide="showSnack = false" :show="showSnack" :text="'Link copied to clipboard'"></Snack>
     </div>
